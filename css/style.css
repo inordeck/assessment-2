@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+	text-align: center;
+	margin: 0 auto;
+}
+h1 {
+	padding: 20px;
+	text-align: center;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 72px;
+	color: #20656a;
+}
+
+/* PLAY GAME */
+.playGame /* div */ {
+	z-index: 10;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	top: 25%;
+}
+.monsters {
+	display: inline-block;
+	height: 100px;
+	padding: 25px;
+}
+#play {
+	display: block;
+	padding: 15px 15px 5px 15px;
+	border: 2px solid #20656a;
+	background-color: black;
+	box-shadow: none;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 30px;
+	color: #20656a;
+	text-decoration: none;
+}
+#play:hover {
+	border: 2px solid #20656a;
+	background-color: #20656a;
+	color: white;
+}
+.background {
+	z-index: -10;
+	position: relative;
+}
