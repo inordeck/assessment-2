@@ -2,6 +2,35 @@ console.log("we're working over here");
 
 /* MONSTER 1 = A=65 / S=83 */
 /* MONSTER 2 = K=75 / L=76 */
+
+
+setInterval(moveMonsterOne, 20);
+var keys = {};
+
+//setInterval(moveMonsterTwo, 20);
+//var keys ={};
+
+$(document).keydown(function(e) {
+	keys[e.keyCode] = true;
+});
+
+$(document).keyup(function(e){
+	delete keys[e.keyCode];
+});
+
+/* move player 1 */
+function moveMonsterOne() {
+	for (var direction in keys) {
+		if (!keys.hasOwnProperty(direction)) continue;
+		if (direction == 65) {
+			$("#monster1").animate({left: "-=5"}, 0);
+		}
+	}
+}
+
+
+
+/*
 $(document).ready(function() {
 	$(document).keydown(function(key) {
 		switch(parstInt(key.which,10)) {
@@ -13,7 +42,7 @@ $(document).ready(function() {
 		}
 	});
 });
-
+*/
 
 /*
 var mOne = document.getElementById("monsterOne");
