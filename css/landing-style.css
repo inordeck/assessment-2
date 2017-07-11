@@ -1,0 +1,112 @@
+/*
+FONTS USED:
+font-family: "Luckiest Guy", cursive;
+
+font-family: 'Amatic SC', cursive; 
+font-weight: 400, 700;
+
+COLORS IN USE:
+STEEL BLUE: #20656a
+GRAY 1 DARK: #58585a
+GRAY 3 MEDIUM: #818286
+GRAY 2 LIGHT: #d1d2d4
+*/
+body {
+	background-color: black;
+	text-align: center;
+	margin: 0 auto;
+}
+h1 {
+	padding: 20px;
+	text-align: center;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 72px;
+	color: #20656a;
+}
+#backToLanding {
+	color: #20656a;
+	text-decoration: none;
+}
+
+/* PLAY GAME */
+.playGame /* div */ {
+	z-index: 10;
+    height: 300px;
+    width: 500px;
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.monsters {
+/*	display: inline-block; */
+	height: 100px;
+	padding: 25px;
+}
+
+#play {
+	display: inline-block;
+	padding: 15px 15px 5px 15px;
+	margin: 0 0 20px 0;
+	border: 2px solid #20656a;
+	background-color: black;
+	box-shadow: none;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 30px;
+	color: #20656a;
+	text-decoration: none;
+}
+#play:hover {
+	border: 2px solid #20656a;
+	background-color: #20656a;
+	color: white;
+}
+.instructions {
+	padding: 10px;
+	color: #818286;
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+/* BACKGROUND */
+.background {
+	z-index: -10;
+	position: relative;
+}
+
+/* FOOTER */
+footer {
+	background-color: black;
+	color: #58585a;
+}
+#footerInfo {
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+}
+#made {
+	display: inline-block;
+	float: left;
+	padding: 50px 10px 15px 10px;
+	margin-bottom: 25px;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 30px;
+}
+#logo {
+	display: inline-block;
+	float: right;
+	clear: right;
+	padding: 25px 10px 15px 10px;
+	margin-bottom: 25px; 
+	height: 60px;
+}
+#copyright {
+	display: block;
+	padding: 10px 0 40px 0;
+	margin: 0 auto;
+	clear: left;
+	font-family: sans-serif;
+}
