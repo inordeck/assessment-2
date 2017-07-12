@@ -50,13 +50,20 @@ function movePlayer(key) {
 
 function setWinState(player, monsters) {
 	document.onkeydown = null;
-	var winner = document.createElement("h1");
-	document.getElementsByTagName("main").appendChild(winner);
-	document.getElementsByTagName("h1") [0].innerText = monsters.name + " Wins!";
-}
+	var node = document.createElement("h1");
+	node.setAttribute("id", "winner");
+	  console.log(node);
+	var textNode = document.createTextNode(monsters.name + " Wins!");
+	node.appendChild(textNode);
+	  console.log(textNode);
+	 document.body.appendChild(node);
+
+//	var winner = document.createElement("h1");
+//	document.getElementsByTagName("h1") [0].innerText = monsters.name + " Wins!";
+//	document.getElementsByTagName("main").appendChild(winner);
+	}
 };
 
-// monsters = {};
 
 
 

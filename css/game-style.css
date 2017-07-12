@@ -71,6 +71,17 @@ form {
 	background-color: #20656a;
 	color: white;
 }
+#winner {
+	position: relative;
+	top: -55%;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: "Luckiest Guy", sans-serif;
+	font-size: 100px;
+	color: #d9e021;
+
+}
 
 /* BACKGROUND */
 .finish { /* finish line */
