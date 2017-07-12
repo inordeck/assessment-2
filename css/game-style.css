@@ -1,5 +1,4 @@
 /*
-
 FONTS USED:
 font-family: "Luckiest Guy", cursive;
 
@@ -8,6 +7,7 @@ font-weight: 400, 700;
 
 COLORS IN USE:
 STEEL BLUE: #20656a
+WINNING YELLOW: #d9e021
 GRAY 1 DARK: #58585a
 GRAY 3 MEDIUM: #818286
 GRAY 2 LIGHT: #d1d2d4
@@ -39,6 +39,10 @@ h1 {
 	color: #20656a;
 	text-decoration: none;
 }
+#backToLanding:hover {
+	color: #d9e021;
+}
+
 
 /* GAME STYLES */
 .monsters {
@@ -78,7 +82,7 @@ form {
 	text-align: center;
 	margin: 0 auto;
 	font-family: "Luckiest Guy", sans-serif;
-	font-size: 100px;
+	font-size: 90px;
 	color: #d9e021;
 
 }

@@ -1,6 +1,12 @@
-console.log("we're (not) working over here (yet");
+console.log("we're (almost) working over here");
+
+/* MONSTER 1 = A=65
+	class: monsters id: monsterOne */
+/* MONSTER 2 = K=75
+	class: monsters id: monsterTwo */
 
 window.onload = function(){
+/* establish monsters and monsters names */
 	monsters = {
 		monsterOne: {
 			div: document.getElementById("monsterOne"),
@@ -11,13 +17,17 @@ window.onload = function(){
 			name: "Monster Two"
 		}
 	};
+
 function startGame(monsters){
+/* set starting position of monsters */
 	monsters.monsterOne.div.style.left = 0;
 	monsters.monsterTwo.div.style.left = 0;
 }
+/* call start game function */
 startGame(monsters);
 
 document.onkeydown = function(key) {
+/* reset position based on keystroke and call check for winner function */
 	monsters.monsterOne.position = parseInt(monsters.monsterOne.div.style.left, 10);
 	monsters.monsterTwo.position = parseInt(monsters.monsterTwo.div.style.left, 10);
 	checkWinner();
@@ -25,6 +35,7 @@ document.onkeydown = function(key) {
 };
 
 function checkWinner() {
+/* check each monster position for winning state */
 	if (monsters.monsterOne.position + monsters.monsterOne.div.offsetWidth >= window.innerWidth - 40) {
 		setWinState(monsters.monsterOne, monsters);
 	}
@@ -34,6 +45,7 @@ function checkWinner() {
 }
 
 function movePlayer(key) {
+/* moving monsters based on keystrokes, setting keystroke and distance for each */
 	switch(key.which) {
 		case 65:  // press a to move monster one
 			var newMonsterOnePosition = monsters.monsterOne.position += 40;
@@ -48,7 +60,8 @@ function movePlayer(key) {
 	}
 }
 
-function setWinState(player, monsters) {
+function setWinState(monsters) {
+/* display who won the race */
 	document.onkeydown = null;
 	var node = document.createElement("h1");
 	node.setAttribute("id", "winner");
@@ -57,23 +70,11 @@ function setWinState(player, monsters) {
 	node.appendChild(textNode);
 	  console.log(textNode);
 	 document.body.appendChild(node);
-
-//	var winner = document.createElement("h1");
-//	document.getElementsByTagName("h1") [0].innerText = monsters.name + " Wins!";
-//	document.getElementsByTagName("main").appendChild(winner);
 	}
 };
 
 
-
-
-
-/* MONSTER 1 = A=65 / S=83 
-	class: monsters id: monsterOne */
-/* MONSTER 2 = K=75 / L=76 
-	class: monsters id: monsterTwo */
-
-
+/* BELOW ARE PREVIOUS ATTEMPTS AT GETTING MONSTERS TO MOVE */
 
 /*
 var keys = {};
