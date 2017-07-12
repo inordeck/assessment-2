@@ -24,6 +24,7 @@ main {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 
 }
 h1 {
@@ -39,22 +40,22 @@ h1 {
 }
 
 /* GAME STYLES */
-.playerPieces /* section */{
-	position: absolute;
-
-
-}
 .monsters {
 	z-index: 10;
 	display: block;
 	height: 75px;
 	padding: 50px 0 50px 0;
 }
+form {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 
+}
 #newRace {
-	display: inline-block;
 	padding: 15px 15px 5px 15px;
-	margin: 0 0 20px 0;
+	margin: 30px 0 20px 0;
 	border: 2px solid #20656a;
 	background-color: black;
 	box-shadow: none;
@@ -70,7 +71,7 @@ h1 {
 }
 
 /* BACKGROUND */
-.finish {
+.finish { /* finish line */
 	position: absolute;
 	display: block;
 	top: 27%;
@@ -84,11 +85,11 @@ h1 {
 	font-size: 60px;
 	letter-spacing: 2px;
 	color: #20656a;
-
 }
 /* FOOTER */
 footer {
 	color: #58585a;
+	margin-top: 100px;
 }
 #footerInfo {
 	margin: 0 auto;
