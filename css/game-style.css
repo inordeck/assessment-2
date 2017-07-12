@@ -1,4 +1,5 @@
 /*
+
 FONTS USED:
 font-family: "Luckiest Guy", cursive;
 
@@ -41,6 +42,7 @@ h1 {
 
 /* GAME STYLES */
 .monsters {
+	position: relative;
 	z-index: 10;
 	display: block;
 	height: 75px;

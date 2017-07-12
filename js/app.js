@@ -11,16 +11,11 @@ window.onload = function(){
 			name: "Monster Two"
 		}
 	};
-};
-
-var monsters = {};
-
 function startGame(monsters){
 	monsters.monsterOne.div.style.left = 0;
 	monsters.monsterTwo.div.style.left = 0;
 }
-
-document.getElementsByTagName("img").className = "";
+startGame(monsters);
 
 document.onkeydown = function(key) {
 	monsters.monsterOne.position = parseInt(monsters.monsterOne.div.style.left, 10);
@@ -43,10 +38,12 @@ function movePlayer(key) {
 		case 65:  // press a to move monster one
 			var newMonsterOnePosition = monsters.monsterOne.position += 40;
 			monsters.monsterOne.div.style.left = newMonsterOnePosition + "px";
+			console.log('aclicked');
 			break;
 		case 75:  // press k to move monster one
 			var newMonsterTwoPosition = monsters.monsterTwo.position += 40;
 			monsters.monsterTwo.div.style.left = newMonsterTwoPosition + "px";
+			console.log('kclicked');
 			break;
 	}
 }
@@ -57,6 +54,11 @@ function setWinState(player, monsters) {
 	document.getElementsByTagName("main").appendChild(winner);
 	document.getElementsByTagName("h1") [0].innerText = monsters.name + " Wins!";
 }
+};
+
+// monsters = {};
+
+
 
 
 /* MONSTER 1 = A=65 / S=83 
