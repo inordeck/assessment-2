@@ -48,7 +48,7 @@ function movePlayer(key) {
 	}
 }
 
-function setWinState(player, monsters) {
+function setWinState(monsters) {
 	document.onkeydown = null;
 	var node = document.createElement("h1");
 	node.setAttribute("id", "winner");
